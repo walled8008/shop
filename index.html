@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Shop | Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">DARK<span>SHOP</span></div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#food">Food</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+            <div class="nav-extra">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to <span>Dark Shop</span></h1>
+                <p>Premium products with a bold style. Explore our exclusive collections.</p>
+                <a href="#food" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Food Section -->
+        <section id="food" class="products">
+            <h2 class="section-title">Our <span>Food</span> Collection</h2>
+            <div class="product-grid" id="food-grid">
+                <!-- Products will be loaded here via JS or manually -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/ff0000?text=Food+Item+1" alt="Food 1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gourmet Burger</h3>
+                        <p class="price">$12.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/ff0000?text=Food+Item+2" alt="Food 2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Special Pizza</h3>
+                        <p class="price">$15.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/ff0000?text=Food+Item+3" alt="Food 3">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fresh Salad</h3>
+                        <p class="price">$9.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photos Section -->
+        <section id="photos" class="gallery">
+            <h2 class="section-title">Product <span>Photos</span></h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://via.placeholder.com/400x400/1a1a1a/ff0000?text=Photo+1" alt="Gallery 1"></div>
+                <div class="gallery-item"><img src="https://via.placeholder.com/400x400/1a1a1a/ff0000?text=Photo+2" alt="Gallery 2"></div>
+                <div class="gallery-item"><img src="https://via.placeholder.com/400x400/1a1a1a/ff0000?text=Photo+3" alt="Gallery 3"></div>
+                <div class="gallery-item"><img src="https://via.placeholder.com/400x400/1a1a1a/ff0000?text=Photo+4" alt="Gallery 4"></div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2 class="section-title">About <span>Us</span></h2>
+                    <p>We are a premium online shop dedicated to providing the best quality products with a unique dark aesthetic. Our mission is to combine style with functionality.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contact <span>Us</span></h2>
+            <div class="contact-container">
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Dark Shop Project. All rights reserved.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
